@@ -8,20 +8,26 @@ public class Note implements Serializable {
     private String noteContent;
 
     public Note(int id, String noteContent) {
-
-
+        this.id = id;
+        this.noteContent = noteContent;
     }
 
-    public int getId() {  return id;  }
+    public int getId() {
+        return id;
+    }
 
-    public String getNoteContent() { return noteContent; }
+    public String getNoteContent() {
+        return noteContent;
+    }
 
     public void setNoteContent(String noteContent) {
         this.noteContent = noteContent;
     }
 
     @Override
-    public String toString() { return "ID:" + id + ", " + noteContent;  }
+    public String toString() {
+        return "ID:" + id + ", " + noteContent;
+    }
 
 }
 
